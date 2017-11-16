@@ -1,0 +1,43 @@
+<html lang ="pl">
+
+    <head>
+        <meta charset="utf-8"/>
+        <script src = "script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <title>Odliczanie czasu</title>
+    </head>
+    <body onload = "counting(); zmienslaid()";>
+        <div class = "container" id = "header">
+            <h1>
+                Odliczanie czasu : 
+            </h1>
+            <h2 id = "zegar"></h2>
+            
+            <h3> Sprawdź czy liczba jest dodatnia czy ujemna</h3>
+                <input type ="text" id = "pole"/>
+                <input type="submit" value="Sprawdź" onclick="check()"/>
+            <div id = "score"></div>
+            <h4>Wypisz ciąg liczb : </h4>
+            <input type = "text" id = "pole1"/>
+            <input type = "text" id ="pole2"/>
+            <input type="submit" value = "Wypisz" onclick = "wypisz()"/>
+            <div id = "wynik"></div>
+        </div>
+        <span onclick="ustawslajd(1)" style="cursor:pointer">[1]</span>
+        <span onclick="ustawslajd(2)" style="cursor:pointer">[2]</span>
+        <span onclick="ustawslajd(3)" style="cursor:pointer">[3]</span>
+        <span onclick="ustawslajd(4)" style="cursor:pointer">[4]</span>
+        <span onclick="ustawslajd(5)" style="cursor:pointer">[5]</span>
+        
+        <br><div id = "slaider"></div>
+    </body>
+</html>
